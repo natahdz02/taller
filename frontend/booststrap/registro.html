@@ -1,0 +1,93 @@
+OCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Registrarse</title>
+
+	<link href='https://fonts.googleapis.com/css?family=Roboto' rel='stylesheet' type='text/css'>
+	<script src="http://code.jquery.com/jquery-latest.js"></script>
+	
+
+	<link rel="stylesheet" href="css/formulario.css">
+	<link href="css/estilos.css" type="text/css" rel="stylesheet">
+</head>
+<body>
+	<script type="text/javascript" src="js/crud.js"></script>
+	<div class="principal"><img src="imagenes/logoUdeM.png"></div>    
+    <header class="container">        
+        <nav>
+			<a href="index.html" class="item-options">Inicio</a>
+			<a href="motos.html" class="item-options">motos</a>
+			<a href="usarios.html" class="item-options">usuario</a>
+			<a href="mantenimientos.html" class="item-options">mantenimientos</a>
+			<a href="crud.html" class="item-options">Crud taller</a>
+		</nav>
+    </header>	
+	
+
+    <div class="contenedor-formulario">
+		<div class="wrap">
+			<form action="" class="formulario" name="formulario_registro" method="get">
+				<div>
+					<div class="input-group">
+						<input type="text" id="nombre" name="nombre">
+						<label class="label" for="nombre">Nombre:</label>
+					</div>
+					<div class="input-group">
+						<input type="text" id="apellido" name="apellido">
+						<label class="label" for="apellido">Apellido:</label>
+					</div>
+
+					<div class="input-group">
+						<input type="text" id="usuario" name="usuario">
+						<label class="label" for="usuario">Nombre De Usario:</label>
+					</div>
+					<div class="input-group">
+						<input type="email" id="correo" name="correo">
+						<label class="label" for="correo">Correo:</label>
+					</div>
+
+					<div class="input-group">
+						<input type="password" id="pass" name="pass">
+						<label class="label" for="pass">Contraseña:</label>
+					</div>
+					<div class="input-group">
+						<input type="password" id="pass2" name="pass2">
+						<label class="label" for="pass2">Repetir Contraseña:</label>
+					</div>
+					
+				
+						
+					<input type="submit" id="btn-submit" onclick="agregar()" value="Enviar">
+				</div>
+			</form>
+		</div>
+	</div>
+	
+	<footer>
+			<div class="footer-container">
+	
+					<div class="footer-columna">
+						<h3>Contactenos</h3>					
+						<span class="fa fa-phone"><p>(+57) 310 456 2015</p></span>
+						<span class="fa fa-envelope"><p>natahdz02@gmail.com</p></span>
+						
+					</div>
+	
+					
+				</div>
+			</div>
+	
+			<div class="footer-copy-redes">
+				<div class="main-copy-redes">
+					<div class="footer-copy">
+						&copy; 2019, Todos los derechos reservados 
+					
+			</div>
+		</footer>
+    
+    <script src="js/formulario.js"></script>
+</body>
+</html>

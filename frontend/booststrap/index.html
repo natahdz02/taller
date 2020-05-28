@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Inicio sesion</title>
+
+	<link rel="stylesheet" href="css/formulario.css">
+	<link href="css/estilos.css" type="text/css" rel="stylesheet">
+	<script type="text/javascript" src="js/crud.js"></script>
+		
+</head>
+<body>
+	<div class="principal"><img src="imagen/logo_taller.jpg"></div>    
+    <header class="container">        
+        <nav>
+            <a href="index.html" class="item-options">Inicio</a>
+			<a href="usuarios.html" class="item-options">usuarios</a>
+			<a href="motos.html" class="item-options">motos</a>
+			<a href="mantenimiento.html" class="item-options">mantenimiento</a>
+		</nav>
+    </header>	
+
+	<div class="contenedor-formulario">
+		<center>
+		<h1 id="tituloInicio">Inico de sesión</h1>
+		<form method="post" onsubmit="return validar();" >
+			
+			<input type="text" name="txtUsuario" id="txtUsuario" placeholder="Usuario" required="required" />
+			<br>
+			<input type="password" name="txtContrasena" id="txtContrasena" placeholder="Contraseña" required="required" />
+			<br>
+			<input type="submit" value="Ingresar" class="btn" onclick="inicioSesion(txtUsuario.value, txtContrasena.value)"/>
+			<br>
+			<a href="registro.html"><input type="submit" value="Registrarse" class="btn"/></a>
+			<!--<button type="submit" class="btn btn-primary btn-block btn-large">Ingresar</button>-->
+		</center>
+	    </form>
+		<p id="respuesta"></p>
+	</div>
+
+	<footer>
+			<div class="footer-container">
+				<div class="footer-main">
+					<div class="footer-columna">
+						<h3>¿Deseas obtener más información sobre las publicaciones? Envianos tu correo</h3>
+						<input type="email" placeholder="Escriba su Correo">
+						<input type="submit" value="Enviar">
+					</div>
+	
+				
+	
+			<div class="footer-copy-redes">
+				<div class="main-copy-redes">
+					<div class="footer-copy">
+						&copy; 2019, Todos los derechos reservados 
+					</div>
+					
+				</div>
+			</div>
+		</footer>
+</body>
+</html>
